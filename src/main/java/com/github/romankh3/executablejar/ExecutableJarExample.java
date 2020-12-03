@@ -12,5 +12,7 @@ public class ExecutableJarExample {
     public static void main(String[] args) {
         System.out.println("Hello world, This is s a sample OpenShift/Kubernetes job");
         System.out.println("Value for the SAMPLE_ENV environment variable: " + System.getenv("SAMPLE_ENV"));
+        Integer exitValue = Integer.parseInt(System.getenv("EXIT_VALUE");
+        System.exit(exitValue);
     }
 }
