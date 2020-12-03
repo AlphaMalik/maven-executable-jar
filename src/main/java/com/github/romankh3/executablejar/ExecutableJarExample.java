@@ -12,7 +12,7 @@ public class ExecutableJarExample {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello world, This is s a sample OpenShift/Kubernetes job");
         System.out.println("Value for the SAMPLE_ENV environment variable: " + System.getenv("SAMPLE_ENV"));
-        if (Boolean.parseBoolean(System.getenv("THROW_EXCEPTION"))
+        if (Boolean.parseBoolean(System.getenv("THROW_EXCEPTION")))
             throw new Exception("Something failed, please check");
             
         System.out.println("sample OpenShift/Kubernetes job completed without any errors");
